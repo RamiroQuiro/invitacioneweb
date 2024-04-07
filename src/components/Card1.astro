@@ -1,0 +1,16 @@
+---
+import H3 from "../components/ux/H3.astro";
+import Button1 from "./ux/Button1.astro";
+const { h3, parrafo, labelBoton } = Astro.props;
+---
+
+<div class="flex flex-col items-center w-1/3 flex-shrink px-2 text-center gap-5">
+  <div class="w-1/2 ">
+    <slot />
+  </div>
+  <H3 clase="text-3xl font-bold mb-3">{h3}</H3>
+  <p class="text-sm">
+    {parrafo}
+  </p>
+<Button1>{labelBoton}</Button1>
+</div>
