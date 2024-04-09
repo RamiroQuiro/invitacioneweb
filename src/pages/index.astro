@@ -200,10 +200,10 @@ import TuPresencia from "../components/home/TuPresencia.astro";
       <TuPresencia />
     </Seccion1>
     <!-- confirmacion -->
-    <Seccion1 clase="min-h-screen relative items-center relative">
-      <div class="flex flex-col gap-4 items-center min-h-screen justify-center">
+    <Seccion1 clase="min-h-screen relative items-center relative py-10">
+      <div class="flex flex-col gap-4 items-center min-h-screen justify-center z-10">
         <H1 clase="text-center py-2 w-1/2">¡Te Esperamos!</H1>
-        <Parrafo1 clase="bg-white px-5 py-2 rounded skew-2"
+        <Parrafo1 clase="bg-white/80 backdrop-blur-sm px-5 py-2 rounded skew-2"
           >Confirma tu presencia enviando un whatsapp hasta el 14 de febrero.
           Clickeá en este boton</Parrafo1
         >
@@ -214,4 +214,9 @@ import TuPresencia from "../components/home/TuPresencia.astro";
 	  </div>
     </Seccion1>
   </main>
+  <footer class="flex items-center justify-center w-full bg-primary-text  h-28 text-primary-500">
+<div >
+	<p class="font-bold">.ramaCode.</p>
+</div>
+  </footer>
 </Layout>
