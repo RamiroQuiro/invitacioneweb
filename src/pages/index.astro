@@ -19,11 +19,12 @@ import TuPresencia from "../components/home/TuPresencia.astro";
   <Header />
 
   <main
-    class="flex flex-col items-center justify-normal w-full text-primary-text"
+    class="flex flex-col items-center justify-normal w-full text-primary-text z-10"
   >
     <Bannercontero />
-    <Seccion1>
+    <Seccion1 clase="cajaCard h-screen mb-20">
       <Card1
+      clase="text1 opacity-100"
         parrafo={"22 de Noviembre a las 19:00 hs en la Iglesia Nuestra Señora delCarmen, Villa Allende, Córdoba. Recibí debajo las indicaciones parallegar."}
         h3="Ceremonia"
         labelBoton="llegar a la ceremonia"
@@ -73,6 +74,7 @@ import TuPresencia from "../components/home/TuPresencia.astro";
         >
       </Card1>
       <Card1
+      clase="text2"
         parrafo={" ¡Te espero el Sábado 25 de noviembre de 21:00 a 05:00 hs para festejar este gran momento de mi vida! Salón Campo Norte, Ruta E53, Córdoba. Clickeá en el botón de abajo y encontrá las indicaciones para llegar, ¡nos vemos!😉"}
         h3="Celebracion"
         labelBoton="llegar a la fiesta"
