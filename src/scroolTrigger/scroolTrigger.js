@@ -8,25 +8,42 @@ gsap.registerPlugin(ScrollTrigger);
 
 // header
 
-const tl=gsap.timeline({
+gsap.to("#bg",{
     scrollTrigger:{
-        trigger:".headerClass",
-     
-        scrub:1,
-    }
-})
-
-tl.to("#bg",{
+        scrub:1
+    },
     scale:1.5,
-    translateY:"-100px",
+    opacity:0
 })
-
-tl.to("#cortinaDerecha",{
-    scale:1.5,
-}).to("#cortinaIzquierda",{
-    scale:1.5,
+gsap.to("#pareja",{
+    scrollTrigger:{
+        scrub:1
+    },
+    scale:0,
+    opacity:0,
+    y:500
 })
-
+gsap.to("#cortinaDerecha",{
+    scrollTrigger:{
+        scrub:1
+    },
+    x:500,
+opacity:0
+})
+gsap.to("#cortinaIzquierda",{
+    scrollTrigger:{
+        scrub:1
+    },
+    x:-500,
+    opacity:0
+})
+gsap.to("#letras",{
+    scrollTrigger:{
+        scrub:1
+    },
+    y:2000,
+    scale:0.5
+})
 
 // card 1
 const tl1=gsap.timeline({

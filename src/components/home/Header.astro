@@ -2,31 +2,47 @@
 
 ---
 
-<header class="headerClass min-h-screen h-full relative w-full flex items-center justify-center bg-red">
-    <div class="flex relative z-20">
-      <div class="flex flex-col items-center gap-2 text-white">
-        <h1 class="text-4xl">Enlace</h1>
+<header
+  class="headerClass min-h-screen h-full relative w-full flex items-center justify-center bg-red"
+>
+  <div class="w-full absolute h-full overflow-hidden top-0 left-0 z-0">
+    <div class="relative h-full   w-full">
+      <div id="letras" class="flex flex-col absolute w-full items-center left-0 top-10 text-white z-10">
+        <h1 class="text-6xl">Enlace</h1>
         <h1
-          class="text-6xl bg-white/50 backdrop-blur-sm rounded px-2 -skew-x-6 text-primary-400 py-1.5"
+          class="text-[9rem] font-black rounded px-2 -skew-x-6 text-primary-500"
         >
           Ramiro & Carla
         </h1>
       </div>
+
+      <img
+        src="/capa3.png"
+        alt="capa3"
+        id="pareja"
+        class="absolute left-1/3 bottom-0 w-1/3 z-20"
+      />
+      <img
+        src="/capa1.png"
+        alt="capa1"
+        id="cortinaDerecha"
+        class="absolute right-0 z-10 top-0"
+      />
+      <img
+        src="/capa2.png"
+        alt="capa2"
+        id="cortinaIzquierda"
+        class="absolute left-0 z-10 top-0"
+      />
+      <img
+        src="/hero.jpg"
+        width="1280"
+        height="854"
+        id="bg"
+        class="backImg absolute top-0 left-0 opacity-100 w-full h-auto z-0 object-center"
+        alt="hero"
+      />
     </div>
-    <div
-      class="w-full h-full absolute top-0 left-0 z-10"
-    >
-    </div>
-    <div class="w-full absolute h-full overflow-hidden  top-0 left-0 z-0">
-      <div class="relative h-full w-full ">
-        
-        <img src="/capa3.png" alt="capa3" class="absolute left-1/3 bottom-0 w-1/3 z-10">
-        <img src="/capa1.png" alt="capa1" id="cortinaDerecha" class="absolute right-0 z-10 top-0"> 
-        <img src="/capa2.png" alt="capa2" id="cortinaIzquierda" class="absolute left-0 z-10 top-0">
-        <img src="/hero.jpg"width="1280" height="854" id="bg" class="backImg opacity-100 w-full h-auto z-0 object-center "alt="hero"/>
-      </div>
-    </div>
-  </header>
-  <style>
-     
-  </style>
+  </div>
+</header>
+<style></style>
